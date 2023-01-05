@@ -3,7 +3,7 @@ import React, { useState }from 'react';
 export const FortuneTeller = () => {
 
     //default values for initial page load
-    const [backgroundImg, setBackgroundImg] = useState('../../public/img/photo8.jpg');
+    const [backgroundImg, setBackgroundImg] = useState('img/photo8.jpg');
     const [messageOne, setMessageOne] = useState('');
     const [messageTwo, setMessageTwo] = useState('');
 
@@ -14,14 +14,14 @@ export const FortuneTeller = () => {
     const partTwo = ['you', 'we', 'the dogs', 'your friends', 'animals', 'beasts of the sea', 'parents', 'politicians'];
     const partThree = ['are depressed', 'drink', 'need to lighten up', 'are happy',  'share 60% DNA with a banana', 'sleep soundly', 
                         'feel joy', 'live, laugh, love'];
-    const imgArray = ['../../public/img/photo1.jpg',
-                    '../../public/img//photo2.jpg', 
-                    './../../public/img/photo3.jpg',
-                    './../../public/img/photo4.jpg',
-                    './../../public/img/photo5.jpg',
-                    './../../public/img/photo6.jpg',
-                    './../../public/img/photo7.jpg',
-                    './../../public/img/photo8.jpg' ];
+    const imgArray = ['img/photo1.jpg',
+                    'img/photo2.jpg', 
+                    'img/photo3.jpg',
+                    'img/photo4.jpg',
+                    'img/photo5.jpg',
+                    'img/photo6.jpg',
+                    'img/photo7.jpg',
+                    'img/photo8.jpg' ];
 
     const fortuneHandler = () => {
         let nums = [];
@@ -42,7 +42,7 @@ export const FortuneTeller = () => {
                 <img className='background' src={backgroundImg} alt='something relevant' />
                 <div className='fortune'>{messageOne}<br />{messageTwo}</div>
             </div>
-            <button type="button" onClick={() => fortuneHandler()}>Give Me Fortune</button>
+            <button id="fortuneButton" type="button" onClick={() => fortuneHandler()}>Give Me Fortune</button>
         </div>
     )
 }

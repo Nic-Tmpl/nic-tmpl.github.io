@@ -5,7 +5,7 @@ export const Projects = () => {
 //or put in public folder
     return (
         <div className='projects-section'>
-            
+            PROJECTS WILL GO HERE
         </div>
     )
 }
