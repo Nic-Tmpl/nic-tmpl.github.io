@@ -8,17 +8,23 @@ function App() {
     <div className='body'>
       <div className='content-wrap'>
         <header className='header'>
+          <div className='header-section'>
           <menu>
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#contact">contact</a></li>
             <li><a href="#">resume</a></li>
           </menu>
-          <div className="name">Nic Temple</div>
+          </div>
+          <div className='name-section'>
+          <h1 className="name">Nic Temple</h1>
+          </div>
+          <div className='header-section'>
           <ul>
             <li>Git</li>
-            <li><button type="button" id="theme-button">Change Theme</button></li>
+            <li className="border-wrap"><button type="button" id="theme-button">Change Theme</button></li>
           </ul>
+          </div>
         </header>
         <main>
           <div className="jumbo">

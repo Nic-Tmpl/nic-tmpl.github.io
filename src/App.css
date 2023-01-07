@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+html {
+  font-size: 62.5%; /* 16px is default, 62.5% is 10px= 1rem */
+  box-sizing: border-box; /*border-box avoids padding mess in similar sized elements */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.body {
+  position: relative;
+  font-size: 1.6rem;
+  color: white;
   min-height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+.header {
+  background-color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+
+.header-section {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex: 1 25vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.name-section {
+  display: flex;
+  justify-content: center;
+  flex: 2 50vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+header menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 1vw;
+  padding-inline-start: 0px;
+}
+
+
+menu li a {
+  text-decoration: none;
+  color: white;
+  padding-right: 1vw;
+}
+
+.name {
+  align-self: center;
+  font-weight: bold;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2vw;
+  padding-right: 1vw;
+}
+
+header ul li {
+  padding: 1vw;
+  font-size: 2rem;
+}
+
+
+.border-wrap {
+  background: white;
+  padding: .25rem;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+}
+
+.border-wrap:hover {
+  background-image:linear-gradient(60deg, #3e35e8, #4efaf4);
+}
+
+#theme-button { 
+  background: black;
+  font-size: 1.6rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 100rem;
+}
+
+#theme-button:hover  {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbo {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jumbo img {
+  max-height: 100vh;
+  padding-top: 20vh;
+  width: auto;
 }
