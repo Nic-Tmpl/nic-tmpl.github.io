@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FortuneTeller } from '../components/FortuneTeller';
+import { Projects } from '../components/Projects';
 
 
 export const AltThemeScreen = () => {
