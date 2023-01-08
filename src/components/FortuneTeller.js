@@ -39,10 +39,14 @@ export const FortuneTeller = () => {
     return (
         <div className='fortune-container'>
             <div className='fortune-box'>
-                <img className='background' src={backgroundImg} alt='something relevant' />
+                <img className='background-img' src={backgroundImg} alt='something relevant' />
                 <div className='fortune'>{messageOne}<br />{messageTwo}</div>
             </div>
-            <button id="fortuneButton" type="button" onClick={() => fortuneHandler()}>Give Me Fortune</button>
+            <div className='btn-box'>
+                <div className='border-wrap'>
+                    <button id="fortuneButton" type="button" onClick={() => fortuneHandler()}>Give Me Fortune</button>
+                </div>
+            </div>
         </div>
     )
 }
