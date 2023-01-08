@@ -1,13 +1,24 @@
+import { useState } from 'react';
 import './App.css';
+import { About } from './components/About';
 import { FortuneTeller } from './components/FortuneTeller';
+import { Jumbo } from './components/Jumbo';
 import { Projects } from './components/Projects';
 
 
 function App() {
+const [theme, setTheme] = useState(false);
+
+const themeHandler = () => {
+  console.log('Theme changed');
+  setTheme(!theme);
+  
+}
+
   return (
     <div className='body'>
       <div className='content-wrap'>
-        <header className='header'>
+      <header className='header'>
           <div className='header-section'>
           <menu>
             <li><a href="#about">about</a></li>
@@ -22,30 +33,22 @@ function App() {
           <div className='header-section'>
           <ul>
             <li>Git</li>
-            <li className="border-wrap"><button type="button" id="theme-button">Change Theme</button></li>
+            <li className="border-wrap">
+              <button type="button" id="theme-button" onClick={() => themeHandler()}>Change Theme</button>
+            </li>
           </ul>
           </div>
         </header>
-        <main>
-          <div className="jumbo">
-            <img src="img/tech-theme-jumbo.jpeg" alt="neon city lights" />
-          </div>
-          <div id="about">
-            <img src="img/tech-theme-personal.jpg" alt="headshot" />
-            <div className="personal-info">
-              <h1>ABOUT</h1>
-              A bunch of personal info goes here, with tech stack at bottom.
-            </div>
-          </div>
+        <Jumbo theme={theme} />
+        <About theme={theme} />
           <div id="projects">
-            <Projects />
+            <Projects theme={theme} />
           </div>
-          <FortuneTeller />
-        </main>
+          <FortuneTeller theme={theme} />
         <footer className="footer">
           <div id="contact">
             <ul className="contact-info">
-              <li>Contact:</li>
+              <li><h2>CONTACT</h2></li>
               <li>Phone:</li>
               <li>Email:</li>
             </ul>
