@@ -28,11 +28,12 @@ function App() {
         </header>
         <main>
           <div className="jumbo">
-            <img src="img/tech-theme-jumbo.jpg" alt="neon city lights" />
+            <img src="img/tech-theme-jumbo.jpeg" alt="neon city lights" />
           </div>
           <div id="about">
             <img src="img/tech-theme-personal.jpg" alt="headshot" />
             <div className="personal-info">
+              <h1>ABOUT</h1>
               A bunch of personal info goes here, with tech stack at bottom.
             </div>
           </div>
