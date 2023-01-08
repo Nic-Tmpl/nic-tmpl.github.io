@@ -1,19 +1,10 @@
-import { useState } from 'react';
 import './App.css';
-import { About } from './components/About';
 import { FortuneTeller } from './components/FortuneTeller';
-import { Jumbo } from './components/Jumbo';
 import { Projects } from './components/Projects';
 
 
 function App() {
-const [theme, setTheme] = useState(false);
 
-const themeHandler = () => {
-  console.log('Theme changed');
-  setTheme(!theme);
-  
-}
 
   return (
     <div className='body'>
@@ -39,12 +30,22 @@ const themeHandler = () => {
           </ul>
           </div>
         </header>
-        <Jumbo theme={theme} />
-        <About theme={theme} />
+        <main>
+        <div className="jumbo">
+          <img src="img/tech-theme-jumbo.jpeg" alt="neon city lights" />
+        </div>
+        <div id="about">
+            <img src="img/tech-theme-personal.jpg" alt="headshot" />
+            <div className="personal-info">
+              <h1>ABOUT</h1>
+              A bunch of personal info goes here, with tech stack at bottom.
+            </div>
+        </div>
           <div id="projects">
-            <Projects theme={theme} />
+            <Projects />
           </div>
-          <FortuneTeller theme={theme} />
+          <FortuneTeller />
+        </main>
         <footer className="footer">
           <div id="contact">
             <ul className="contact-info">
