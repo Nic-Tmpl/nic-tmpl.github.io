@@ -45,7 +45,15 @@ export const LandingScreen = () => {
             <img src="img/tech-theme-personal.jpg" alt="headshot" />
             <div className="personal-info">
               <h1>ABOUT</h1>
-              A bunch of personal info goes here, with tech stack at bottom.
+              Former piano performer and instructor, transitioning to software engineering since mid-2021. 
+              Previous professional experience stressed communication and self-starting, in addition to scheduling and managing projects 
+              from start to finish. I enjoy working collaboratively and building relationships around shared goals. 
+              I enjoy working with complex problems, breaking them down to small pieces, and learning new skills and techniques. 
+              Music studies taught me the importance of critical feedback in personal growth.
+
+              I do still write music and play piano, in addition to writing prose. 
+              I have a passion for literature, collecting vinyl records, and the occasional late-night dive into wikipedia.
+              <h2>Tech Stack</h2>
             </div>
         </div>
           <div id="projects">
