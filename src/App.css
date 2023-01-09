@@ -203,3 +203,32 @@ button:hover  {
   align-items: center;
   justify-content: center;
 }
+
+/*alt theme styles */
+.alt-body {
+  position: relative;
+  font-size: 1.6rem;
+  background-color: whitesmoke;
+  color: darkslategray;
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+}
+
+.alt-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+#alt-link {
+  text-decoration: none;
+  color: darkslategray;
+  padding-right: 1vw;
+}
+
+.alt-jumbo {
+  height: 100vh;
+}

@@ -13,15 +13,15 @@ export const AltThemeScreen = () => {
     }
 
     return (
-      <div className='body'>
+      <div className='alt-body'>
         <div className='content-wrap'>
-        <header className='header'>
+        <header className='alt-header'>
           <div className='header-section'>
           <menu>
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li><a href="#">resume</a></li>
+            <li><a id="alt-link" href="#about">about</a></li>
+            <li><a id="alt-link" href="#projects">projects</a></li>
+            <li><a id="alt-link" href="#contact">contact</a></li>
+            <li><a id="alt-link" href="#">resume</a></li>
           </menu>
           </div>
           <div className='name-section'>
@@ -37,7 +37,7 @@ export const AltThemeScreen = () => {
           </div>
         </header>
         <main>
-        <div className="jumbo">
+        <div className="alt-jumbo">
           <img src="img/alt-pic.jpg" alt="alternate theme" />
         </div>
         <div id="about">
