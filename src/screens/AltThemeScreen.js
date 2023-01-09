@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
@@ -31,7 +31,7 @@ export const AltThemeScreen = () => {
           </div>
           <div className='header-section'>
           <ul>
-            <li>Git</li>
+          <li><a href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a></li>
             <li className="border-wrap">
               <button type="button" id="theme-button" onClick={() =>themeHandler()}>Change Theme</button>
             </li>
@@ -80,7 +80,7 @@ export const AltThemeScreen = () => {
             </ul>
           </div>
           <div className="socials">
-            <p>GITHUB LINK</p>
+            <p><FontAwesomeIcon icon={faGithub} /></p>
           </div>
         </footer>
     </div>
