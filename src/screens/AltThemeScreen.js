@@ -48,9 +48,11 @@ export const AltThemeScreen = () => {
               from start to finish. I enjoy working collaboratively and building relationships around shared goals. 
               I enjoy working with complex problems, breaking them down to small pieces, and learning new skills and techniques. 
               Music studies taught me the importance of critical feedback in personal growth.
-
+              <br className='spacer'/>
               I do still write music and play piano, in addition to writing prose. 
               I have a passion for literature, collecting vinyl records, and the occasional late-night dive into wikipedia.
+              <br className='spacer'/>
+              Some of my projects are below, in addition to the first script I wrote in JS - a dadaist fortune teller. Enjoy!
               <h2>Tech Stack</h2>
             </div>
             <img src="img/tech-theme-personal.jpg" alt="headshot" />
