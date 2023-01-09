@@ -13,6 +13,7 @@ export const AltThemeScreen = () => {
     }
 
     return (
+      <div className='body'>
         <div className='content-wrap'>
         <header className='header'>
           <div className='header-section'>
@@ -64,5 +65,6 @@ export const AltThemeScreen = () => {
           </div>
         </footer>
     </div>
-    )
+  </div>
+  )
 }

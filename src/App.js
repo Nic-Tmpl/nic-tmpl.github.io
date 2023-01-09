@@ -8,12 +8,10 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className='body'>
       <Routes>
         <Route path="/alternate" element={<AltThemeScreen />} />
         <Route path="/" element={<LandingScreen />} />
       </Routes>
-  </div>
   </BrowserRouter>
   );
 }

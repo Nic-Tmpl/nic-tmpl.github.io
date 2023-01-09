@@ -14,6 +14,7 @@ export const LandingScreen = () => {
 
 
     return(
+    <div className='body'>
      <div className='content-wrap'>
         <header className='header'>
           <div className='header-section'>
@@ -65,5 +66,6 @@ export const LandingScreen = () => {
           </div>
         </footer>
     </div>
-    )
+  </div>
+  )
 }
