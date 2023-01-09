@@ -125,6 +125,27 @@ button:hover  {
   border-radius: 18%;
 }
 
+.personal-info {
+  margin-right: 1vw;
+}
+
+#about ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#about ul li {
+  padding: 2vw;
+  font-size: 4rem;
+}
+
+#about ul li:last-child {
+  font-size: 2rem;
+}
+
 /*projects component styles */
 #projects {
   height: 100vh;

@@ -38,6 +38,7 @@ export const FortuneTeller = () => {
 
     return (
         <div className='fortune-container'>
+            <h1>Fortune Teller</h1>
             <div className='fortune-box'>
                 <img className='background-img' src={backgroundImg} alt='something relevant' />
                 <div className='fortune'>{messageOne}<br />{messageTwo}</div>

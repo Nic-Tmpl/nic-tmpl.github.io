@@ -19,6 +19,7 @@ export const Projects = () => {
 
     return (
         <div className='projects-section'>
+            <h1>Projects</h1>
             <div className='project-box'>
                 <div className='video-box'>
                     <div className='btn-box-left'>
