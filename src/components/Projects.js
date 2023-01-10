@@ -32,22 +32,30 @@ export const Projects = () => {
     }
 
     return (
-        <div className='projects-section'>
+        <div className='projects-container'>
             <h1>Projects</h1>
-            <div className='project-box'>
-                <div className='video-box'>
-                    <div className='btn-box-left'>
-                        <button id="dec-btn" type="button" onClick={() => decrementer()}>Prev</button>
+                <div className='project-box'>
+                    <h1>{name}</h1>
+                    <h3>hover to play video</h3>
+                    <video className='project-video' 
+                    onMouseOver={event => event.target.play()} 
+                    onMouseOut={event => event.target.pause()}
+                    src={video} type='video/mp4' muted>
+                    </video>
+                    <div className='project-btn-box'>
+                        <div className='border-wrap'>
+                            <button type="button" onClick={() => decrementer()}>Prev</button>
+                        </div>
+                        <div className='border-wrap'>
+                            <button type="button" onClick={() => incrementer()}>Next</button>
+                        </div>
                     </div>
-                    <div className='btn-box-right'>
-                        <button id="inc-btn" type="button" onClick={() => incrementer()}>Next</button>
-                    </div>
+                <div className='description-box'>
+                    <p>{description}</p>
                 </div>
-            <div className='description'>
-                <p>A bunch of description for the project...</p>
-            </div>
             </div>
         </div>
+
     )
 }
 

@@ -151,16 +151,44 @@ button:hover  {
 }
 
 /*projects component styles */
-#projects {
-  height: 100vh;
+
+
+.projects-container {
+  width: 80%;
+  margin: auto;
+}
+
+.project-box {
+  position: relative;
+  text-align: center;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  padding: 2%;
+  border: .1rem solid white;
+  border-radius: 5%;
 }
+
+.project-video {
+  max-width: 90%;
+  height: auto;
+}
+
+.project-btn-box {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+
+
+
 
 /*fortune teller styles */
 .fortune-container {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
