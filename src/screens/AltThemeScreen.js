@@ -31,7 +31,7 @@ export const AltThemeScreen = () => {
           </div>
           <div className='header-section'>
           <ul>
-          <li><a href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a></li>
+          <li><a id="alt-link" href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a></li>
             <li className="border-wrap">
               <button type="button" id="theme-button" onClick={() =>themeHandler()}>Change Theme</button>
             </li>
@@ -80,7 +80,7 @@ export const AltThemeScreen = () => {
             </ul>
           </div>
           <div className="socials">
-            <p><FontAwesomeIcon icon={faGithub} /></p>
+          <a href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </footer>
     </div>

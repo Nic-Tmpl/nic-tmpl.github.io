@@ -81,7 +81,7 @@ export const LandingScreen = () => {
             </ul>
           </div>
           <div className="socials">
-            <p><FontAwesomeIcon icon={faGithub} /></p>
+            <a href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </footer>
     </div>

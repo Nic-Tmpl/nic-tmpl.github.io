@@ -47,7 +47,7 @@ header menu {
 }
 
 
-menu li a {
+header li a {
   text-decoration: none;
   color: white;
   padding-right: 1vw;
@@ -70,6 +70,10 @@ header ul {
 header ul li {
   padding: 2vw;
   font-size: 2rem;
+}
+
+header ul li a {
+  font-size: 3rem;
 }
 
 
@@ -223,6 +227,12 @@ button:hover  {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
 }
 
 /*alt theme styles */
