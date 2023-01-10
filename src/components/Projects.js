@@ -1,20 +1,34 @@
 import React, { useState } from 'react';
+import { projectsObject } from '../utils/projectsObject';
 
 export const Projects = () => {
 //This will contain a scroll screen with each project and a short video of the project - need to work out hosting
 //or put in public folder
-    const [project, setProject] = useState(0);
+    const [project, setProject] = useState(projectsObject[0]);
+    const { id, name, video, description, live, repo } = project;
     
     const incrementer = () => {
-        let next = project+1;
-        project !== 3 ? setProject(next) : setProject(0);
-        console.log(project);
+        console.log(id);
+        let next = id;
+        next++;
+        console.log(next);
+        if (next <= 3) {
+            setProject(projectsObject[next]);
+        } else {
+            setProject(projectsObject[0]);
+        }
     }
 
     const decrementer = () => {
-        let prev = project-1;
-        project !== 0 ? setProject(prev) : setProject(3);
-        console.log(project);
+        console.log(id);
+        let prev = id;
+        prev--;
+        console.log(prev);
+        if (prev >= 0 ) {
+            setProject(projectsObject[prev]);
+        } else {
+            setProject(projectsObject[3])
+        }
     }
 
     return (
