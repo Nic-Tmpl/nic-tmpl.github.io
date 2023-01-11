@@ -5,7 +5,7 @@ export const Projects = () => {
 //This will contain a scroll screen with each project and a short video of the project - need to work out hosting
 //or put in public folder
     const [project, setProject] = useState(projectsObject[0]);
-    const { id, name, video, description, live, repo } = project;
+    const { id, name, video, description, stack, live, repo } = project;
     
     const incrementer = () => {
         console.log(id);
@@ -51,29 +51,21 @@ export const Projects = () => {
                         </div>
                     </div>
                 <div className='description-box'>
-                    <p>{description}</p>
+                    {description}
+                </div>
+                <div className='stack-box'>
+                   Tech Stack: {stack}
+                </div>
+                <div className='link-box'>
+                    <div className='link-wrap'>
+                        <a href={live}>Live Site</a>
+                    </div>
+                    <div className='link-wrap'>
+                        <a href={repo}>Repo</a>
+                    </div>
                 </div>
             </div>
         </div>
 
     )
 }
-
-
-/*         <div className='projects-section'>
-            <div className='project-box'>
-                <div className='video-box'>
-                    <video className='project-video' src={backgroundImg} alt='something relevant' />
-                    <div className='btn-box-left'>
-                        <button id="dec-btn" type="button" onClick={() => decrementer()}>Prev</button>
-                    </div>
-                    <div className='btn-box-right'>
-                        <button id="inc-btn" type="button" onClick={() => incrementer()}>Next</button>
-                    </div>
-                </div>
-            <div className='description'>
-                <p>A bunch of description for the project...</p>
-            </div>
-            </div>
-        </div>
-        */
