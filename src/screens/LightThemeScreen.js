@@ -6,7 +6,7 @@ import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
 
 
-export const AltThemeScreen = () => {
+export const LightThemeScreen = () => {
 
     const navigate = useNavigate();
 

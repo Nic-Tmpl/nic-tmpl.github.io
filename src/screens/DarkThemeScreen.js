@@ -6,7 +6,7 @@ import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
 
 
-export const LandingScreen = () => {
+export const DarkThemeScreen = () => {
 
     const navigate = useNavigate();
 
