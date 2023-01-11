@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { AltThemeScreen } from './screens/AltThemeScreen';
-import { LandingScreen } from './screens/LandingScreen';
+import { LightThemeScreen } from './screens/LightThemeScreen';
+import { DarkThemeScreen } from './screens/DarkThemeScreen';
 
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/alternate" element={<AltThemeScreen />} />
-        <Route path="/" element={<LandingScreen />} />
+        <Route path="/alternate" element={<DarkThemeScreen />} />
+        <Route path="/" element={<LightThemeScreen />} />
       </Routes>
   </BrowserRouter>
   );
