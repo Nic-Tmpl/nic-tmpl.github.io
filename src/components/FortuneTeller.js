@@ -1,6 +1,6 @@
 import React, { useState }from 'react';
 
-export const FortuneTeller = () => {
+export const FortuneTeller = ({ lightTheme }) => {
 
     //default values for initial page load
     const [backgroundImg, setBackgroundImg] = useState('img/photo8.jpg');

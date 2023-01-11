@@ -68,9 +68,9 @@ export const LandingScreen = () => {
             </div>
         </div>
           <div id="projects">
-            <Projects />
+            <Projects lightTheme={false} />
           </div>
-          <FortuneTeller />
+          <FortuneTeller lightTheme={false} />
         </main>
         <footer className="footer">
           <div id="contact">

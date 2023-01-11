@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { projectsObject } from '../utils/projectsObject';
 
-export const Projects = () => {
+export const Projects = ({ lightTheme }) => {
 //This will contain a scroll screen with each project and a short video of the project - need to work out hosting
 //or put in public folder
     const [project, setProject] = useState(projectsObject[0]);

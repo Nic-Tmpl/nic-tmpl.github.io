@@ -15,16 +15,16 @@ export const AltThemeScreen = () => {
     }
 
     return (
-      <div className='alt-body'>
+      <div className='light-body'>
         <div className='content-wrap'>
-        <header className='alt-header'>
-          <div className='alt-navbar'>
+        <header className='light-header'>
+          <div className='light-navbar'>
           <div className='header-section'>
           <menu>
-            <li><a id="alt-link" href="#about">about</a></li>
-            <li><a id="alt-link" href="#projects">projects</a></li>
-            <li><a id="alt-link" href="#contact">contact</a></li>
-            <li><a id="alt-link" href="#">resume</a></li>
+            <li><a id="light-link" href="#about">about</a></li>
+            <li><a id="light-link" href="#projects">projects</a></li>
+            <li><a id="light-link" href="#contact">contact</a></li>
+            <li><a id="light-link" href="#">resume</a></li>
           </menu>
           </div>
           <div className='name-section'>
@@ -32,7 +32,7 @@ export const AltThemeScreen = () => {
           </div>
           <div className='header-section'>
           <ul>
-          <li><a id="alt-link" href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a></li>
+          <li><a id="light-link" href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a></li>
             <li className="border-wrap">
               <button type="button" id="theme-button" onClick={() =>themeHandler()}>Change Theme</button>
             </li>
@@ -46,7 +46,7 @@ export const AltThemeScreen = () => {
         </header>
         <main>
         <div id="about">
-            <div className="personal-info">
+            <div className="light-personal-info">
               <h1>ABOUT</h1>
              <p>Former piano performer and instructor, transitioning to software engineering since mid-2021. Started out with the K&R C
               programming book before moving on to a PERN stack.
@@ -67,12 +67,12 @@ export const AltThemeScreen = () => {
                 <li>Express/PostGreSQL</li>
               </ul>
             </div>
-            <img src="img/tech-theme-personal.jpg" alt="headshot" />
+            <img src="img/about-image.jpg" alt="headshot" />
         </div>
           <div id="projects">
-            <Projects />
+            <Projects lightTheme={true} />
           </div>
-          <FortuneTeller />
+          <FortuneTeller lightTheme={true} />
         </main>
         <footer className="footer">
           <div id="contact">
