@@ -11,7 +11,7 @@ export const DarkThemeScreen = () => {
     const navigate = useNavigate();
 
     const themeHandler =() => {
-        navigate("/alternate");
+        navigate("/");
     }
 
 

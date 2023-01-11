@@ -11,7 +11,7 @@ export const LightThemeScreen = () => {
     const navigate = useNavigate();
 
     const themeHandler = () => {
-        navigate("/");
+        navigate("/alternate");
     }
 
     return (
