@@ -18,6 +18,7 @@ export const AltThemeScreen = () => {
       <div className='alt-body'>
         <div className='content-wrap'>
         <header className='alt-header'>
+          <div className='alt-navbar'>
           <div className='header-section'>
           <menu>
             <li><a id="alt-link" href="#about">about</a></li>
@@ -27,7 +28,7 @@ export const AltThemeScreen = () => {
           </menu>
           </div>
           <div className='name-section'>
-          <h1 className="name">Nic Temple</h1>
+          <h2 className="name">Nic Temple</h2>
           </div>
           <div className='header-section'>
           <ul>
@@ -37,11 +38,13 @@ export const AltThemeScreen = () => {
             </li>
           </ul>
           </div>
+          </div>
+          <div className="display">
+            <h1>Nic Temple</h1>
+            <h2>Musician | Programmer | Writer</h2>
+          </div>
         </header>
         <main>
-        <div className="alt-jumbo">
-          <img src="img/alt-pic.jpg" alt="alternate theme" />
-        </div>
         <div id="about">
             <div className="personal-info">
               <h1>ABOUT</h1>
