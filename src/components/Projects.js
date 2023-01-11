@@ -32,9 +32,10 @@ export const Projects = ({ lightTheme }) => {
     }
 
     return (
+        lightTheme ?
         <div className='projects-container'>
             <h1>Projects</h1>
-                <div className='project-box'>
+                <div className='light-project-box'>
                     <h1>{name}</h1>
                     <h3>hover to play video</h3>
                     <video className='project-video' 
@@ -43,29 +44,59 @@ export const Projects = ({ lightTheme }) => {
                     src={video} type='video/mp4' muted>
                     </video>
                     <div className='project-btn-box'>
-                        <div className='border-wrap'>
-                            <button type="button" onClick={() => decrementer()}>Prev</button>
-                        </div>
-                        <div className='border-wrap'>
-                            <button type="button" onClick={() => incrementer()}>Next</button>
-                        </div>
+                            <button id="project-btn" type="button" onClick={() => decrementer()}>Prev</button>
+                            <button id="project-btn" type="button" onClick={() => incrementer()}>Next</button>
                     </div>
-                <div className='description-box'>
+                <div className='light-description-box'>
                     {description}
                 </div>
-                <div className='stack-box'>
+                <div className='light-stack-box'>
                    Tech Stack: {stack}
                 </div>
                 <div className='link-box'>
-                    <div className='link-wrap'>
+                    <div className='light-border-wrap'>
                         <a href={live}>Live Site</a>
                     </div>
-                    <div className='link-wrap'>
+                    <div className='light-border-wrap'>
                         <a href={repo}>Repo</a>
                     </div>
                 </div>
             </div>
         </div>
-
+        :
+        <div className='projects-container'>
+        <h1>Projects</h1>
+            <div className='project-box'>
+                <h1>{name}</h1>
+                <h3>hover to play video</h3>
+                <video className='project-video' 
+                onMouseOver={event => event.target.play()} 
+                onMouseOut={event => event.target.pause()}
+                src={video} type='video/mp4' muted>
+                </video>
+                <div className='project-btn-box'>
+                    <div className='border-wrap'>
+                        <button type="button" onClick={() => decrementer()}>Prev</button>
+                    </div>
+                    <div className='border-wrap'>
+                        <button type="button" onClick={() => incrementer()}>Next</button>
+                    </div>
+                </div>
+            <div className='description-box'>
+                {description}
+            </div>
+            <div className='stack-box'>
+               Tech Stack: {stack}
+            </div>
+            <div className='link-box'>
+                <div className='link-wrap'>
+                    <a href={live}>Live Site</a>
+                </div>
+                <div className='link-wrap'>
+                    <a href={repo}>Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
     )
 }
