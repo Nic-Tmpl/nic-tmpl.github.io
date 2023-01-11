@@ -100,6 +100,7 @@ button {
 button:hover  {
   color: white;
   background-image:linear-gradient(60deg, #3e35e8, #b41a63);
+  cursor: pointer;
 }
 
 .jumbo {
@@ -341,6 +342,10 @@ button:hover  {
   padding-right: 1vw;
 }
 
+#light-link:hover {
+  color: #d48166;
+}
+
 .display {
   display: flex;
   flex-direction: column;
@@ -355,4 +360,128 @@ button:hover  {
 
 .light-personal-info {
   padding: 5vw;
+}
+
+/* button styles */
+.light-border-wrap {
+  background: rgb(55, 58, 54);
+  opacity: 0.9;
+  padding: .25rem;
+  display: flex;
+  align-items: center;
+}
+
+.light-border-wrap:hover {
+  background: #d48166;
+  opacity: 1;
+}
+
+.light-border-wrap button { 
+  background: #d48166;
+  font-size: 1.6rem;
+  color: #e6e3dd;
+  padding: 1rem;
+  opacity: 1;
+  border-radius: 0rem;
+}
+
+.light-border-wrap button:hover  {
+  cursor: pointer;
+}
+
+.light-border-wrap a {
+  text-decoration: none;
+  background: #d48166;
+  font-size: 1.6rem;
+  color: #e6e3dd;
+  padding: 2rem;
+  opacity: 1;
+  border: .2rem solid black;
+  border-radius: 0rem;
+}
+
+.light-border-wrap a:hover  {
+  cursor: pointer;
+}
+
+/*light project styles */
+.light-project-box {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  border: .1rem solid black;
+  background-color: rgb(55, 58, 54);
+  border-radius: 5%;
+}
+
+.light-project-box h1 {
+  color: #e6e3dd;
+}
+
+.light-project-box h3 {
+  color: #e6e3dd;
+}
+
+.light-description-box {
+  color:#e6e3dd;
+}
+
+.light-stack-box {
+  color: #e6e3dd;
+}
+
+#project-btn {
+  background: #d48166;
+  font-size: 1.6rem;
+  color: #e6e3dd;
+  padding: 1rem 2.4rem;
+  border-radius: 100rem;
+}
+
+#project-btn:hover {
+  cursor: pointer;
+  background: #e6e3dd;
+  color: #d48166;
+}
+
+.light-theme-fortune {
+    background: rgb(55, 58, 54);
+    border: .2rem solid black;
+    border-radius: 5%;
+}
+
+.light-fortune-box {
+  position: relative;
+  text-align: center;
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.light-btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+#light-fortune-button {
+  border: .2rem solid black;
+  border-radius: 100rem;
+  background: #d48166;
+  color: #e6e3dd;
+  font-size: 2.4rem;
+  cursor: pointer;
+  padding: 1.6rem;
+}
+
+#light-fortune-button:hover {
+  border: .2rem solid #d48166;
+  background: #e6e3dd;
+  color: #d48166;
 }

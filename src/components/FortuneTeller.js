@@ -40,13 +40,13 @@ export const FortuneTeller = ({ lightTheme }) => {
         lightTheme ?
         <div className='fortune-container'>
             <h1>Fortune Teller</h1>
-            <div className='fortune-box'>
-                <img className='background-img' src={backgroundImg} alt='something relevant' />
-                <div className='fortune'>{messageOne}<br />{messageTwo}</div>
-            </div>
-            <div className='btn-box'>
-                <div className='light-border-wrap'>
-                    <button id="fortuneButton" type="button" onClick={() => fortuneHandler()}>Give Me Fortune</button>
+            <div className='light-theme-fortune'>
+                <div className='light-fortune-box'>
+                    <img className='background-img' src={backgroundImg} alt='something relevant' />
+                    <div className='fortune'>{messageOne}<br />{messageTwo}</div>
+                </div>
+                <div className='light-btn-box'>
+                    <button id="light-fortune-button" type="button" onClick={() => fortuneHandler()}>Give Me Fortune</button>
                 </div>
             </div>
         </div> 
@@ -58,7 +58,7 @@ export const FortuneTeller = ({ lightTheme }) => {
             <div className='fortune'>{messageOne}<br />{messageTwo}</div>
         </div>
         <div className='btn-box'>
-            <div className='light-border-wrap'>
+            <div className='border-wrap'>
                 <button id="fortuneButton" type="button" onClick={() => fortuneHandler()}>Give Me Fortune</button>
             </div>
         </div>
