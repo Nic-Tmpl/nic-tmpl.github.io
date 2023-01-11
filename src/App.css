@@ -303,7 +303,7 @@ button:hover  {
 }
 
 /*alt theme styles */
-.alt-body {
+.light-body {
   position: relative;
   font-size: 1.6rem;
   background-color: #e6e3dd;
@@ -313,7 +313,7 @@ button:hover  {
   margin: 0;
 }
 
-.alt-header {
+.light-header {
   background-image: url("../public/img/jumbo.jpg");
   background-size: cover;
   background-position: bottom;
@@ -324,7 +324,7 @@ button:hover  {
   height: 90vh;
 }
 
-.alt-navbar {
+.light-navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -335,7 +335,7 @@ button:hover  {
     z-index: 1;
 }
 
-#alt-link {
+#light-link {
   text-decoration: none;
   color: rgb(55, 58, 54);
   padding-right: 1vw;
@@ -351,4 +351,8 @@ button:hover  {
 
 .display h1 {
   font-size: 4.8rem;
+}
+
+.light-personal-info {
+  padding: 5vw;
 }
