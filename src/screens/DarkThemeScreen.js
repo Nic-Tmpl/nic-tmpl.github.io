@@ -44,7 +44,7 @@ export const DarkThemeScreen = () => {
           <img src="img/tech-theme-jumbo.jpeg" alt="neon city lights" />
         </div>
         <div id="about">
-            <img src="img/tech-theme-personal.jpg" alt="headshot" />
+            <img src="img/tech-theme-personal.JPG" alt="headshot" />
             <div className="personal-info">
               <h1>ABOUT</h1>
               <p>Former piano performer and instructor, transitioning to software engineering since mid-2021. Started out with the K&R C
