@@ -7,12 +7,10 @@ import { DarkThemeScreen } from './screens/DarkThemeScreen';
 function App() {
 
   return (
-    <HashRouter>
       <Routes>
         <Route path="/alternate" element={<DarkThemeScreen />} />
         <Route path="/" element={<LightThemeScreen />} />
       </Routes>
-  </HashRouter>
   );
 }
 
