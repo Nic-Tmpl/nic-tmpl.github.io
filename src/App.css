@@ -183,8 +183,15 @@ button:hover  {
   width: 80%;
 }
 
+.description-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .stack-box {
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: space-around;
   font-size: 2.4rem;
@@ -330,7 +337,7 @@ button:hover  {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgba(230, 227, 221, 0.4);
+    background: rgba(230, 227, 221, 0.5);
     position: relative;
     height: 10vh;
     z-index: 1;
@@ -427,11 +434,17 @@ button:hover  {
 }
 
 .light-description-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color:#e6e3dd;
 }
 
 .light-stack-box {
-  color: #e6e3dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:#e6e3dd;
 }
 
 #project-btn {

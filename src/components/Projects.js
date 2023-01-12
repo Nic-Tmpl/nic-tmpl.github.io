@@ -48,10 +48,12 @@ export const Projects = ({ lightTheme }) => {
                             <button id="project-btn" type="button" onClick={() => incrementer()}>Next</button>
                     </div>
                 <div className='light-description-box'>
+                <h2>Description:</h2>
                     {description}
                 </div>
                 <div className='light-stack-box'>
-                   Tech Stack: {stack}
+                <h2>Tech Stack</h2>
+                   {stack}
                 </div>
                 <div className='link-box'>
                     <div className='light-border-wrap'>
@@ -83,10 +85,12 @@ export const Projects = ({ lightTheme }) => {
                     </div>
                 </div>
             <div className='description-box'>
+                <h2>Description:</h2>
                 {description}
             </div>
             <div className='stack-box'>
-               Tech Stack: {stack}
+                <h2>Tech Stack</h2>
+               {stack}
             </div>
             <div className='link-box'>
                 <div className='link-wrap'>
