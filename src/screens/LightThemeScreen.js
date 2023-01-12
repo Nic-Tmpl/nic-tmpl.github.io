@@ -24,7 +24,7 @@ export const LightThemeScreen = () => {
             <li><a id="light-link" href="#about">about</a></li>
             <li><a id="light-link" href="#projects">projects</a></li>
             <li><a id="light-link" href="#contact">contact</a></li>
-            <li><a id="light-link" href="#">resume</a></li>
+            <li><a id="light-link" href="resume.pdf">resume</a></li>
           </menu>
           </div>
           <div className='name-section'>
@@ -78,8 +78,8 @@ export const LightThemeScreen = () => {
           <div id="contact">
             <ul className="contact-info">
               <li><h2>CONTACT</h2></li>
-              <li>Phone:</li>
-              <li>Email:</li>
+              <li>Phone: (541) 601-2091</li>
+              <li>Email: nictemplepiano@gmail.com</li>
             </ul>
           </div>
           <div className="socials">
