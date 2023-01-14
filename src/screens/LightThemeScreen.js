@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import HashLinkObserver from 'react-hash-link';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
@@ -23,10 +23,10 @@ export const LightThemeScreen = () => {
           <div className='light-navbar'>
           <div className='header-section'>
           <menu>
-            <li><a id="light-link" href="#about">about</a></li>
+            <li><Link id="light-link" to ={{hash: "#about"}}>about</Link></li>
             <li><a id="light-link" href="#projects">projects</a></li>
             <li><a id="light-link" href="#contact">contact</a></li>
-            <li><a id="light-link" href="https://Nic-Tmpl.github.io/resume.pdf">resume</a></li>
+            <li><a id="light-link" href="https://Nic-Tmpl.github.io/Resume.pdf">resume</a></li>
           </menu>
           </div>
           <div className='name-section'>

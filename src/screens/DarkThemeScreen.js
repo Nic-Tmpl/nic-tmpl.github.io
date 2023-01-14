@@ -26,7 +26,7 @@ export const DarkThemeScreen = () => {
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#contact">contact</a></li>
-            <li><a href="https://Nic-Tmpl.github.io/resume.pdf">resume</a></li>
+            <li><a href="https://Nic-Tmpl.github.io/Resume.pdf">resume</a></li>
           </menu>
           </div>
           <div className='name-section'>
