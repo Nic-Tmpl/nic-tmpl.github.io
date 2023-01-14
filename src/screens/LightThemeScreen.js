@@ -1,8 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Link, useNavigate } from 'react-router-dom';
-import HashLinkObserver from 'react-hash-link';
+import { useNavigate } from 'react-router-dom';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
 
@@ -15,17 +14,21 @@ export const LightThemeScreen = () => {
         navigate("/alternate");
     }
 
+    const hashNavHandler = (id) => {
+      const div = document.getElementById(id);
+      div.scrollIntoView();
+    }
+
     return (
       <div className='light-body'>
-        <HashLinkObserver />
         <div className='content-wrap'>
         <header className='light-header'>
           <div className='light-navbar'>
           <div className='header-section'>
           <menu>
-            <li><Link id="light-link" to ={{hash: "#about"}}>about</Link></li>
-            <li><a id="light-link" href="#projects">projects</a></li>
-            <li><a id="light-link" href="#contact">contact</a></li>
+            <li id="light-link" onClick={()=>hashNavHandler('about')}>about</li>
+            <li id="light-link" onClick={()=>hashNavHandler('projects')}>projects</li>
+            <li><a id="light-link" onClick={()=>hashNavHandler('contact')}>contact</a></li>
             <li><a id="light-link" href="https://Nic-Tmpl.github.io/Resume.pdf">resume</a></li>
           </menu>
           </div>
