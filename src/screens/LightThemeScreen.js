@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import HashLinkObserver from 'react-hash-link';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
 
@@ -16,6 +17,7 @@ export const LightThemeScreen = () => {
 
     return (
       <div className='light-body'>
+        <HashLinkObserver />
         <div className='content-wrap'>
         <header className='light-header'>
           <div className='light-navbar'>
