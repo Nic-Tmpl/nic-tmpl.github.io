@@ -46,11 +46,15 @@ header menu {
   padding-inline-start: 0px;
 }
 
-
 header menu li {
-  text-decoration: none;
   color: white;
   padding-right: 1vw;
+  cursor: pointer;
+}
+
+
+header li a {
+  text-decoration: none;
 }
 
 .name {
