@@ -47,7 +47,7 @@ header menu {
 }
 
 
-header li a {
+header menu li {
   text-decoration: none;
   color: white;
   padding-right: 1vw;
@@ -351,6 +351,7 @@ button:hover  {
 
 #light-link:hover {
   color: #d48166;
+  cursor: pointer;
 }
 
 .display {

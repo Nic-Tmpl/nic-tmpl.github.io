@@ -28,7 +28,7 @@ export const LightThemeScreen = () => {
           <menu>
             <li id="light-link" onClick={()=>hashNavHandler('about')}>about</li>
             <li id="light-link" onClick={()=>hashNavHandler('projects')}>projects</li>
-            <li><a id="light-link" onClick={()=>hashNavHandler('contact')}>contact</a></li>
+            <li id="light-link" onClick={()=>hashNavHandler('contact')}>contact</li>
             <li><a id="light-link" href="https://Nic-Tmpl.github.io/Resume.pdf">resume</a></li>
           </menu>
           </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import HashLinkObserver from 'react-hash-link';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
 
@@ -15,17 +14,21 @@ export const DarkThemeScreen = () => {
         navigate("/");
     }
 
+    const hashNavHandler = (id) => {
+      const div = document.getElementById(id);
+      div.scrollIntoView();
+    }
+
 
     return(
     <div className='body'>
-      <HashLinkObserver />
      <div className='content-wrap'>
         <header className='header'>
           <div className='header-section'>
           <menu>
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li onClick={()=>hashNavHandler('about')}>about</li>
+            <li onClick={()=>hashNavHandler('projects')}>projects</li>
+            <li onClick={()=>hashNavHandler('contact')}>contact</li>
             <li><a href="https://Nic-Tmpl.github.io/Resume.pdf">resume</a></li>
           </menu>
           </div>
