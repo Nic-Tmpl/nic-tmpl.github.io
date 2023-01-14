@@ -26,7 +26,7 @@ export const LightThemeScreen = () => {
             <li><a id="light-link" href="#about">about</a></li>
             <li><a id="light-link" href="#projects">projects</a></li>
             <li><a id="light-link" href="#contact">contact</a></li>
-            <li><a id="light-link" href="resume.pdf">resume</a></li>
+            <li><a id="light-link" href="https://Nic-Tmpl.github.io/resume.pdf">resume</a></li>
           </menu>
           </div>
           <div className='name-section'>
