@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
@@ -87,6 +87,7 @@ export const DarkThemeScreen = () => {
           </div>
           <div className="socials">
             <a href="https://github.com/Nic-Tmpl"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/nic-temple-53b453263/"><FontAwesomeIcon icon={faLinkedin} /></a>
           </div>
         </footer>
     </div>
