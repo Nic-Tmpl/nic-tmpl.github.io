@@ -37,6 +37,12 @@ html {
   flex: 2 50vw;
 }
 
+@media only screen and (max-width: 760px) {
+  .name-section {
+    display: none;
+  }
+}
+
 header menu {
   list-style-type: none;
   display: flex;
@@ -121,9 +127,16 @@ button:hover  {
   border-radius: 28%;
 }
 
+@media only screen and (max-width: 760px) {
+  .jumbo img {
+    max-width: 100vw;
+    max-height: auto;
+  }
+}
+
 /*about section styles */
 #about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
 }
@@ -133,6 +146,21 @@ button:hover  {
   height: fit-content;
   padding: 5vw;
   border-radius: 18%;
+}
+
+@media only screen and (max-width: 760px) {
+  #about {
+    flex-wrap: wrap;
+  }
+
+  #about img {
+    max-width: 90vw;
+    align-self: center;
+    height: auto;
+  }
+  .personal-info {
+    margin: 2vw;
+  }
 }
 
 .personal-info {
@@ -157,7 +185,6 @@ button:hover  {
 }
 
 /*projects component styles */
-
 
 .projects-container {
   width: 80%;
@@ -280,6 +307,8 @@ button:hover  {
   padding-bottom: 1rem;
 }
 
+
+/* Footer styles */
 .footer {
   margin-top: 2.4rem;
   display: flex;
@@ -297,16 +326,22 @@ button:hover  {
   align-items: center;
 }
 
+@media only screen and (max-width: 760px) {
+ #contact {
+  display: none;
+ }
+}
+
 #contact ul {
   list-style-type: none;
 }
 
 .socials {
   border-left: .1rem solid white;
-  width: 50%;
+  min-width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .socials a {
