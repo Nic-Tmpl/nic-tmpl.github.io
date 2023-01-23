@@ -156,6 +156,7 @@ button:hover  {
   #about img {
     max-width: 90vw;
     align-self: center;
+    padding: 2vw;
     height: auto;
   }
   .personal-info {
