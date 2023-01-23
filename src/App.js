@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { LightThemeScreen } from './screens/LightThemeScreen';
 import { DarkThemeScreen } from './screens/DarkThemeScreen';
