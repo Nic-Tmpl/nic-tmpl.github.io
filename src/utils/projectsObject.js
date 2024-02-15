@@ -35,7 +35,7 @@ export const projectsObject = [
         video: 'video/lindy-site.mp4',
         description: `Static website built for the Lindy Swing Society of Ashland, OR.`,
         stack: `HTML | CSS`,
-        live: null,
+        live: 'http://ashlandlindyswingsociety.com',
         repo: 'https://github.com/Nic-Tmpl/Lindyswingsociety'
     },   
 ]
