@@ -141,6 +141,10 @@ button:hover  {
   flex-direction: row;
 }
 
+.light-personal-info h1 {
+  border-bottom: .7rem solid;
+}
+
 #about img {
   max-width: 35vw;
   height: fit-content;
@@ -166,6 +170,10 @@ button:hover  {
 
 .personal-info {
   margin-right: 1vw;
+}
+
+.light-personal-info h1 {
+  border-bottom: .7rem solid;
 }
 
 #about ul {
