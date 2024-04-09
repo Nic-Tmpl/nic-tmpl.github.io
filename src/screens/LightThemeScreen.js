@@ -4,6 +4,7 @@ import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub, faLinkedin } fro
 import { useNavigate } from 'react-router-dom';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export const LightThemeScreen = () => {
@@ -50,34 +51,38 @@ export const LightThemeScreen = () => {
           </div>
         </header>
         <main>
-        <div id="about">
-            <div className="light-personal-info">
-              <h1>ABOUT</h1>
-             <p>Former piano performer and instructor, transitioning to software engineering since mid-2021. Started out with the K&R C
+        <ScrollAnimation animateIn='slideInLeft'>
+          <div id="about">
+              <div className="light-personal-info">
+                <h1>ABOUT</h1>
+                <p>Former piano performer and instructor, transitioning to software engineering since mid-2021. Started out with the K&R C
               programming book before moving on to a PERN stack.
               Previous professional experience stressed communication and self-starting, in addition to scheduling and managing projects 
               from start to finish. I enjoy working collaboratively and building relationships around shared goals. 
               I also enjoy working with complex problems, breaking them down to small pieces, and learning new skills and techniques. 
               Music studies taught me the importance of critical feedback in personal growth.</p>
-              <p>I do still write music and play piano, in addition to writing prose. 
+                <p>I do still write music and play piano, in addition to writing prose. 
               I have a passion for literature, collecting vinyl records, and the occasional late-night dive into wikipedia.</p>
-              <p>Some of my projects are below, in addition to the first script I wrote in JS - a dadaist fortune teller.</p>
-              <h2>Tech Stack</h2>
-              <ul className='tech-stack'>
-                <li><FontAwesomeIcon icon={faHtml5} /></li>
-                <li><FontAwesomeIcon icon={faCss3Alt} /></li>
-                <li><FontAwesomeIcon icon={faJs} /></li>
-                <li><FontAwesomeIcon icon={faReact} /></li>
-                <li><FontAwesomeIcon icon={faNodeJs} /></li>
-                <li>Express/PostGreSQL</li>
-              </ul>
-            </div>
-            <img src="img/about-image.jpg" alt="headshot" />
-        </div>
-          <div id="projects">
-            <Projects lightTheme={true} />
+                <p>Some of my projects are below, in addition to the first script I wrote in JS - a dadaist fortune teller.</p>
+                <h2>Tech Stack</h2>
+                <ul className='tech-stack'>
+                  <li><FontAwesomeIcon icon={faHtml5} /></li>
+                  <li><FontAwesomeIcon icon={faCss3Alt} /></li>
+                  <li><FontAwesomeIcon icon={faJs} /></li>
+                  <li><FontAwesomeIcon icon={faReact} /></li>
+                  <li><FontAwesomeIcon icon={faNodeJs} /></li>
+                  <li>Express/PostGreSQL</li>
+                </ul>
+              </div>
+              <img src="img/about-image.jpg" alt="headshot" />
           </div>
-          <FortuneTeller lightTheme={true} />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='slideInRight'>
+            <div id="projects">
+              <Projects lightTheme={true} />
+            </div>
+            <FortuneTeller lightTheme={true} />
+          </ScrollAnimation>
         </main>
         <footer className="footer">
           <div id="contact">
