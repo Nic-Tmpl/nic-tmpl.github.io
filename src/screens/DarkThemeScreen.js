@@ -4,6 +4,7 @@ import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faGithub, faLinkedin } fro
 import { useNavigate } from 'react-router-dom';
 import { FortuneTeller } from '../components/FortuneTeller';
 import { Projects } from '../components/Projects';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export const DarkThemeScreen = () => {
@@ -49,9 +50,10 @@ export const DarkThemeScreen = () => {
           <img src="img/tech-theme-jumbo.jpeg" alt="neon city lights" />
         </div>
         <div id="about">
-            <img src="img/tech-theme-personal.JPG" alt="headshot" />
+          <img src="img/tech-theme-personal.JPG" alt="headshot" />
             <div className="personal-info">
               <h1>ABOUT</h1>
+              <ScrollAnimation animateIn='fadeIn' duration={2} animateOnce={true}>
               <p>Former piano performer and instructor, transitioning to software engineering since mid-2021. Started out with the K&R C
               programming book before moving on to a PERN stack.
               Previous professional experience stressed communication and self-starting, in addition to scheduling and managing projects 
@@ -70,6 +72,7 @@ export const DarkThemeScreen = () => {
                 <li><FontAwesomeIcon icon={faNodeJs} /></li>
                 <li>Express/PostGreSQL</li>
               </ul>
+              </ScrollAnimation>
             </div>
         </div>
           <div id="projects">
